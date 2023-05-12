@@ -6,10 +6,16 @@ Package was created for a specific use case, but will be maintained. PRs welcome
 
 ## Usage
 
+
 ```python
 from influxdb_influxql_client import InfluxQLClient
 
 ic = InfluxQLClient('http://mocked.local:8086', 'database')
+
+# Given this uses requests library, it is possible to update the session to handle basic auth/proxies etc
+# For example, disabling SSL verification
+ic.sh.verify = False
+
 results = ic.query_api().query("select 1")
 
 for result in results.results:
