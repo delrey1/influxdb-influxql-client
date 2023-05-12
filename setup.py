@@ -6,13 +6,7 @@ requires = [
     'pydantic'
 ]
 
-with open('README.rst', 'r') as f:
-    # Remove `class` text role as it's not allowed on PyPI
-    lines = []
-    for line in f:
-        lines.append(line.replace(":class:`~", "`"))
-
-    readme = "".join(lines)
+readme = open('README.md').read()
 
 NAME = "influxql_client"
 
@@ -22,7 +16,7 @@ setup(
     description="InfluxDB InfluxQL Basic Library",
     keywords=["InfluxDB", "InfluxDB Python Client", "InfluxQL"],
     long_description=readme,
-    long_description_content_type="text/x-rst",
+    long_description_content_type="text/markdown",
     install_requires=requires,
     packages=find_packages(exclude=('tests*',)),
     test_suite='tests',
