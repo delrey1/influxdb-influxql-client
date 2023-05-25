@@ -12,7 +12,7 @@ NAME = "influxql_client"
 
 setup(
     name=NAME,
-    version='0.0.1',
+    version='0.0.2',
     description="InfluxDB InfluxQL Basic Library",
     keywords=["InfluxDB", "InfluxDB Python Client", "InfluxQL"],
     long_description=readme,
@@ -22,6 +22,7 @@ setup(
     test_suite='tests',
     python_requires='>=3.7',
     include_package_data=True,
+    url="https://github.com/delrey1/influxdb-influxql-client",
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
