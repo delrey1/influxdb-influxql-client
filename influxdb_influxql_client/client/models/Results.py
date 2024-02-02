@@ -1,6 +1,6 @@
 from typing import List, Optional, Any, Dict
 
-from pydantic import BaseModel
+from pydantic.v1 import BaseModel
 
 
 class SeriesModel(BaseModel):

@@ -3,7 +3,7 @@ from setuptools import setup, find_packages  # noqa: H301
 requires = [
     'setuptools >= 21.0.0',
     'requests >= 2.28.2',
-    'pydantic'
+    'pydantic >= 2'
 ]
 
 readme = open('README.md').read()
@@ -12,7 +12,7 @@ NAME = "influxql_client"
 
 setup(
     name=NAME,
-    version='0.0.2',
+    version='0.0.3',
     description="InfluxDB InfluxQL Basic Library",
     keywords=["InfluxDB", "InfluxDB Python Client", "InfluxQL"],
     long_description=readme,
