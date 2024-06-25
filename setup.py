@@ -12,7 +12,7 @@ NAME = "influxql_client"
 
 setup(
     name=NAME,
-    version='0.0.4',
+    version='0.0.5',
     description="InfluxDB InfluxQL Basic Library",
     keywords=["InfluxDB", "InfluxDB Python Client", "InfluxQL"],
     long_description=readme,

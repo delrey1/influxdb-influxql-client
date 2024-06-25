@@ -13,7 +13,8 @@ class QueryApi:
             'db': self._influxdb_client.database
         })
 
-        assert response.status_code == 200
+        assert response.status_code == 200, "Unexpected Response code from Influx Client: {}".format(
+            response.status_code)
         return response
 
     def query(self, query: str) -> ResultsModel:
